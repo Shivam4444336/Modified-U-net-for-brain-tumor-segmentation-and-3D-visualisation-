@@ -6,6 +6,7 @@ to human error and results in significant intra- and inter-rater variability. To
 ## Project Pipeline consists two parts:
 ### Deep Learning:
 - Data Set Acquisition
+- Data Augmentation & Pre Processing
 - Model Search
 - Model Development
 - Model Testing
@@ -21,6 +22,12 @@ to human error and results in significant intra- and inter-rater variability. To
 For model training we have used brats 2020 dataset which provides volumetric data of MRI modality of four channels : flair, t1, t1-post-contrast and t2 per patient sample with ground truths of 3 classes : Enhancing Tumor, Edema & Necrotic.
 - Volumetric Data Size per sample per channel  = 240,240,155
 - Total Samples = 369
+## Data Augmentation & Pre Processing:
+**We apply min max normalisation to all individual channels.**
+- Training Phase Augmentation :
+  - Grid Distortion with distortion limit = 0.7 randomly across 3 axis per channel.
+  - Random Zoom in to all channels from discrete list of this values  -  [0.83,0.77,0.71,0.67]  
+- Inference Phase Augmentation :Histogram matching to Flair & T1 weighted channels.
 ## Model Search:
 U net has became ideal choice for medical image segmentation among researchers and deep learning engineers.
 Various variants of U net model are proposed by researchers.
