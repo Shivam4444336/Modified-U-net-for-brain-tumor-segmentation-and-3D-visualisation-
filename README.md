@@ -45,14 +45,14 @@ Various variants of U net model are proposed by researchers.
   - Used Instance Normalisation.
 ## Model Development:
 ### Model Architecture Block Diagram:
-![]()
+![](20210412_163115.png)
 ### Sub Blocks of Model Architecture:
 **ResNet Block**
-![]()
+![](
 **Pooling Block**
-![]()
+![](
 **Upsampling Block**
-![]()
+![](
 
 ### Model architecture details:
 The model architecture follows U net configuration and resnet block as backbone with below mentioned modifications.
