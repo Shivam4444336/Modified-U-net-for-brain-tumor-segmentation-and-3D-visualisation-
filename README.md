@@ -27,7 +27,8 @@ For model training we have used brats 2020 dataset which provides volumetric dat
 - Training Phase Augmentation :
   - Grid Distortion with distortion limit = 0.7 randomly across 3 axis per channel.
   - Random Zoom in to all channels from discrete list of this values  -  [0.83,0.77,0.71,0.67]  
-- Inference Phase Augmentation :Histogram matching to Flair & T1 weighted channels.
+- Inference Phase Augmentation:
+  - Histogram matching to Flair & T1 weighted channels.
 ## Model Search:
 U net has became ideal choice for medical image segmentation among researchers and deep learning engineers.
 Various variants of U net model are proposed by researchers.
