@@ -72,6 +72,10 @@ The model architecture follows U net configuration and resnet block as backbone 
 ![](IMG_20210412_175806.jpg)
 
 ## Model Training Details:
+### Metrics Used for training:
+- **Loss Metric**: Soft Dice loss was used for training. It measures the overlap between two regions. If overlap between two regions is 100%, then loss is 0 and it rises as the overlap between two regions decreases.
+![](
+
 
 
 
