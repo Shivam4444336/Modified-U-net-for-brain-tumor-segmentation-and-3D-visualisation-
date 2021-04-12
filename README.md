@@ -5,14 +5,14 @@ to human error and results in significant intra- and inter-rater variability. To
 # Methodology :
 ## Project Pipeline consists two parts :
 ### Deep Learning :
--Data Set Acquisition
--Model Search
--Model Development
--Model Testing
--Model Tuning based on test results.
+- Data Set Acquisition
+- Model Search
+- Model Development
+- Model Testing
+- Model Tuning based on test results.
 ### 3D Rendering
--Acquiring 3D model attributes from voxel data using marching cubes algorithm
--Creating Mesh object of those attributes
--Creating Stl file
--Feeding stl file into viewer
--Empirical smoothing
+- Acquiring 3D model attributes from voxel data using marching cubes algorithm
+- Creating Mesh object of those attributes
+- Creating Stl file
+- Feeding stl file into viewer
+- Empirical smoothing
