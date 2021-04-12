@@ -50,7 +50,7 @@ Various variants of U net model are proposed by researchers.
 **ResNet Block**
 ![](20210412_170933.png)
 **Pooling Block**
-![](20210412_170938.png)
+![](IMG_20210412_174910.jpg)
 **Upsampling Block**
 ![](IMG_20210412_173813.jpg)
 
