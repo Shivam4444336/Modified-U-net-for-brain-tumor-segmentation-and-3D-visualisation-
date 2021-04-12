@@ -66,7 +66,8 @@ The model architecture follows U net configuration and resnet block as backbone 
     - Swish activation function makes error space smooth which leverages the probability of better convergence.
 - Use of two convolution kernels parallely to reduce overfitting.
 - Collective use of Convolution Transpose and Linear Interpolation technique to leverage probability of good accuracy.
-### 
-![](20210412_163115.png)
+**Model filter and Group Normalization Group Specification of encoder**
+
+
 
 
