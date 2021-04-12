@@ -44,6 +44,7 @@ Various variants of U net model are proposed by researchers.
 - [3] Proposed a variant of U net with following modifications:
   - Auxiliary segmentation outputs, which are used for deep supervision, branch off at two lowest resolutions in the decoder with softmax non linearity. 
   - Used Instance Normalisation.
+  - Used Leaky Rely for intermediate layer activation.
 ## Model Development:
 ### Model Architecture Block Diagram:
 ![](20210412_163115.png)
@@ -70,7 +71,8 @@ The model architecture follows U net configuration and resnet block as backbone 
 - **Model filters and Group Normalization Groups Specification of encoder:**
 ![](IMG_20210412_175806.jpg)
 
-## Model Training:
+## Model Training Details:
+
 
 
 
