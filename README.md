@@ -52,7 +52,7 @@ Various variants of U net model are proposed by researchers.
 **Pooling Block**
 ![](
 **Upsampling Block**
-![](
+![](20210412_170936.png)
 
 ### Model architecture details:
 The model architecture follows U net configuration and resnet block as backbone with below mentioned modifications.
