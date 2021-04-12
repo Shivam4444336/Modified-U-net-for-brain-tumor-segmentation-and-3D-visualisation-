@@ -48,7 +48,7 @@ Various variants of U net model are proposed by researchers.
 ![](20210412_163115.png)
 ### Sub Blocks of Model Architecture:
 **ResNet Block**
-![](
+![](20210412_170933.png)
 **Pooling Block**
 ![](
 **Upsampling Block**
