@@ -44,7 +44,17 @@ Various variants of U net model are proposed by researchers.
   - Auxiliary segmentation outputs, which are used for deep supervision, branch off at two lowest resolutions in the decoder with softmax non linearity. 
   - Used Instance Normalisation.
 ## Model Development:
-### Model architecture and details:
+### Model Architecture Block Diagram:
+![]()
+### Sub Blocks of Model Architecture:
+**ResNet Block**
+![]()
+**Pooling Block**
+![]()
+**Upsampling Block**
+![]()
+
+### Model architecture details:
 The model architecture follows U net configuration and resnet block as backbone with below mentioned modifications.
 - Proposed model takes whole multichannel 3D volumetric data as input without slicing it into patch.
 - Group Normalization is used instead of Batch because of batch size constraints.
@@ -56,7 +66,7 @@ The model architecture follows U net configuration and resnet block as backbone 
     - Swish activation function makes error space smooth which leverages the probability of better convergence.
 - Use of two convolution kernels parallely to reduce overfitting.
 - Collective use of Convolution Transpose and Linear Interpolation technique to leverage probability of good accuracy.
-### Model Architecture Block Diagram:
+### 
 ![](20210412_163115.png)
 
 
