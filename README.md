@@ -67,7 +67,7 @@ The model architecture follows U net configuration and resnet block as backbone 
 - Use of two convolution kernels parallely to reduce overfitting.
 - Collective use of Convolution Transpose and Linear Interpolation technique to leverage probability of good accuracy.
 **Model filter and Group Normalization Group Specification of encoder**
-
+![](IMG_20210412_175806.jpg)
 
 
 
