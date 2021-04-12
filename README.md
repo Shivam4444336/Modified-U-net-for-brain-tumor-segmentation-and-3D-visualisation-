@@ -19,7 +19,7 @@ to human error and results in significant intra- and inter-rater variability. To
 
 ## Dataset Acquisition:
 For model training we have used brats 2020 dataset which provides volumetric data of MRI modality of four channels : flair, t1, t1-post-contrast and t2 per patient sample with ground truths of 3 classes : Enhancing Tumor, Edema & Necrotic.
-- Volumetric Data Size per sample per channel  = 240*240*155
+- Volumetric Data Size per sample per channel  = 240,240,155
 - Total Samples = 369
 ## Model Search:
 U net has became ideal choice for medical image segmentation among researchers and deep learning engineers.
@@ -35,6 +35,19 @@ Various variants of U net model are proposed by researchers.
 - [3] Proposed a variant of U net with following modifications:
   - Auxiliary segmentation outputs, which are used for deep supervision, branch off at two lowest resolutions in the decoder with softmax non linearity. 
   - Used Instance Normalisation.
+## Model Development:
+### Model architecture and details:
+The model architecture follows U net configuration and resnet block as backbone with below mentioned modifications.
+- Proposed model takes whole multichannel 3D volumetric data as input without slicing it into patch.
+- Group Normalization is used instead of Batch because of batch size constraints.
+- Model encoder pools the input data up to reasonable stride of 8 . 
+- Convolution operation pools the volumetric data instead of conventional Max Pooling Operations.
+- Use of swish activation function in intermediate layers instead of relu.  
+  -Reason : 
+    - Use of relu activation function can hinder learning of some tumor patterns. 
+    - Swish activation function makes error space smooth which leverages the probability of better convergence.
+- Use of two 3*3*3 kernels parallely to reduce overfitting.
+- Collective use of Convolution Transpose and Linear Interpolation technique to leverage probability of good accuracy.
 
 
 
