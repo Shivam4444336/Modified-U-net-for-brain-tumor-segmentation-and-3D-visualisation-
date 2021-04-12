@@ -59,4 +59,3 @@ The model architecture follows U net configuration and resnet block as backbone 
 ### Model Architecture Block Diagram:
 
 
-
