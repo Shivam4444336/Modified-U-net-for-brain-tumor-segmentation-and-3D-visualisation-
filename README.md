@@ -9,6 +9,7 @@ to human error and results in significant intra- and inter-rater variability. To
 - Data Augmentation & Pre Processing
 - Model Search
 - Model Development
+- Model Training
 - Model Testing
 - Model Tuning based on test results.
 ### 3D Rendering
@@ -68,6 +69,9 @@ The model architecture follows U net configuration and resnet block as backbone 
 - Collective use of Convolution Transpose and Linear Interpolation technique to leverage probability of good accuracy.
 - **Model filters and Group Normalization Groups Specification of encoder:**
 ![](IMG_20210412_175806.jpg)
+
+## Model Training:
+
 
 
 
