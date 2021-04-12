@@ -46,9 +46,9 @@ The model architecture follows U net configuration and resnet block as backbone 
   -Reason : 
     - Use of relu activation function can hinder learning of some tumor patterns. 
     - Swish activation function makes error space smooth which leverages the probability of better convergence.
-- Use of two 3*3*3 kernels parallely to reduce overfitting.
+- Use of two convolution kernels parallely to reduce overfitting.
 - Collective use of Convolution Transpose and Linear Interpolation technique to leverage probability of good accuracy.
-
+### Model Architecture Block Diagram:
 
 
 
