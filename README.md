@@ -16,3 +16,8 @@ to human error and results in significant intra- and inter-rater variability. To
 - Creating Stl file
 - Feeding stl file into viewer
 - Empirical smoothing
+
+## Dataset Acquisition:
+For model training we have used brats 2020 dataset which provides volumetric data of MRI modality of four channels : flair, t1, t1-post-contrast and t2 per patient sample with ground truths of 3 classes : Enhancing Tumor, Edem & Necrotic.
+- Volumetric Data Size per sample per channel  = 240*240*155
+- Total Samples = 369
