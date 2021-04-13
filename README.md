@@ -93,10 +93,16 @@ The model architecture follows U net configuration and resnet block as backbone 
 ![](IMG_20210413_100243.jpg)
 **Accuracy Result:**
 ![](IMG_20210413_100156.jpg)
+## Model Testing:
+**The proposed trained model was tested on brats 2020 
+validation dataset indirectly via top performing model of brats 2020 challenge [3] nnUnet because 
+direct ground truth of validation dataset is not available.** 
+- The top performing nnUnet model trained for this brats challenge was downloaded via their publicly available nnUnet framework.
 
 
 
 
+ 
 
 
 
