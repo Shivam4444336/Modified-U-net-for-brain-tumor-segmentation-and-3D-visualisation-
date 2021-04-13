@@ -87,8 +87,9 @@ The model architecture follows U net configuration and resnet block as backbone 
 - **Batch Size** = 1
 - **Learning Rate Decay**: 
   - α = α0 × (1-e/Ne)^0.9 (adapted from [2])
-
-
+  - e is epoch counter and Ne is total number of epochs.
+### Training Results:
+![](
 
 
 
