@@ -106,7 +106,9 @@ direct ground truth of validation dataset is not available.**
 ![](IMG_20210413_165452.jpg)
 ## 3D Rendered Results:
 ### Edema:
-
+**Ground Truth**           |  **Predicted**
+:-------------------------:|:-------------------------:
+![](   |  ![](https://...Ocean.png)
 
 
 
