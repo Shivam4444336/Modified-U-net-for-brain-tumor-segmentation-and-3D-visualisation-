@@ -108,7 +108,15 @@ direct ground truth of validation dataset is not available.**
 ### Edema:
 **Ground Truth**           |  **Predicted**
 :-------------------------:|:-------------------------:
-![](   |  ![](20210413_133137.gif)
+![](20210413_171433.gif)   |  ![](20210413_133137.gif)
+### Necrotic Tumor:
+**Ground Truth**           |  **Predicted**
+:-------------------------:|:-------------------------:
+![](   |  ![](
+### Enhancing Tumor:
+**Ground Truth**           |  **Predicted**
+:-------------------------:|:-------------------------:
+![](   |  ![](
 
 
 
