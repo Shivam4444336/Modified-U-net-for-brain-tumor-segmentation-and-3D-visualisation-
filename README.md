@@ -116,7 +116,7 @@ direct ground truth of validation dataset is not available.**
 ### Enhancing Tumor:
 **Ground Truth**           |  **Predicted**
 :-------------------------:|:-------------------------:
-![](   |  ![](
+![](20210413_172109.gif)   |  ![](
 
 
 
