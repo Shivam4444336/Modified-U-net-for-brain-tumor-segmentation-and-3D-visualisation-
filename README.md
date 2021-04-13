@@ -25,10 +25,10 @@ For model training we have used brats 2020 dataset which provides volumetric dat
 - Total Samples = 369
 ## Data Augmentation & Pre Processing:
 **We apply min max normalisation to all individual channels.**
-- Training Phase Augmentation :
+- **Training Phase Augmentation:**
   - Grid Distortion with distortion limit = 0.7 randomly across 3 axis per channel.
   - Random Zoom in to all channels from discrete list of this values  -  [0.83,0.77,0.71,0.67]  
-- Inference Phase Augmentation:
+- **Inference Phase Augmentation:**
   - Histogram matching to Flair & T1 weighted channels.
 ## Model Search:
 U net has became ideal choice for medical image segmentation among researchers and deep learning engineers.
@@ -117,7 +117,12 @@ direct ground truth of validation dataset is not available.**
 **Ground Truth**           |  **Predicted**
 :-------------------------:|:-------------------------:
 ![](20210413_172109.gif)   |  ![](20210413_172237.gif)
-
+## References:
+1. 3D MRI brain tumor segmentation using
+autoencoder regularization
+2. Two-Stage Cascaded U-Net: 1st Place Solution to BraTS Challenge 2019
+Segmentation Task
+3. nnU-Net for Brain Tumor Segmentation
 
 
 
