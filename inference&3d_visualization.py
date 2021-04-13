@@ -22,7 +22,7 @@ data[:,:,:,0] = hist_match(data[:,:,:,0],target[:,:,:,0])
 #T1 weighted matching
 data[:,:,:,1] = hist_match(data[:,:,:,1],target[:,:,:,1])
 
-output = model(np.expand_dims(data,0))
+output = modified_u_net(np.expand_dims(data,0))
 for k in range(3):
   verts, faces, normals, values = measure.marching_cubes_lewiner(output[0,:,:,:,k])
   mesh_object = np.zeros(faces.shape[0],dtype=mesh.Mesh.dtype)
