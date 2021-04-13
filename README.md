@@ -85,7 +85,8 @@ The model architecture follows U net configuration and resnet block as backbone 
 - **Epochs** = 160
 - **Optimizer** = Adam(with default alpha/beta configurations)
 - **Batch Size** = 1
-- **Learning Rate Decay**: α = α0 × (1-e/Ne)^0.9 (adapted from [2])
+- **Learning Rate Decay**: 
+  - α = α0 × (1-e/Ne)^0.9 (adapted from [2])
 
 
 
