@@ -92,7 +92,7 @@ The model architecture follows U net configuration and resnet block as backbone 
 **Loss Result:**
 ![](IMG_20210413_100243.jpg)
 **Accuracy Result:**
-![](
+![](IMG_20210413_100156.jpg)
 
 
 
