@@ -112,7 +112,7 @@ direct ground truth of validation dataset is not available.**
 ### Necrotic Tumor:
 **Ground Truth**           |  **Predicted**
 :-------------------------:|:-------------------------:
-![](   |  ![](
+![](20210413_171748.gif)   |  ![](
 ### Enhancing Tumor:
 **Ground Truth**           |  **Predicted**
 :-------------------------:|:-------------------------:
