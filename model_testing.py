@@ -9,7 +9,7 @@ Original file is located at
 
 #pipeline for evaluating modified u net performance w.r.t to brats validation dataset via nnUnet prediction masks
 # dictionary mappings of tumor class : '0':Necrotic '1':Edema '2':Enhancing
-dictionary_of_validation_score_of_nnUnet_from_brats_competiton = {'1':91.9,'0':85.24,'2':79.45}
+dictionary_of_validation_score_of_nnUnet_from_brats_competiton = {'1':0.9719,'0':0.8524,'2':0.7945}
 #Generating coarse binary mask from nnUnet using brats validation dataset
 coarse_validation_ground_truth_from_nnUnet = np.zeros((100,240,240,155,3))
 for i in range(100):
