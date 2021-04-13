@@ -101,7 +101,7 @@ direct ground truth of validation dataset is not available.**
 - Then brats validation data was passed in **Inference Mode** through model and generated output masks were converted to binary mask through thresholding with threshold of **0.5**.
 - **Coarse Dice Score** of predicted output masks of our trained model was obtained w.r.t this binary mask.
 - Final evaluation score of our model was obtained by scaling our coarse dice score with validation dice score of **nnUnet** which they obtained from brats evaluation platform during brats competition.
-  - **Final Dice Score of our model** = (Coarse Dice Score w.r.t nnUnet) **X** (Validation Dice Score of nnUnet obtained during brats competition).
+  - **Final Dice Score of our model** = **(** Coarse Dice Score w.r.t nnUnet **)** **X** **(** Validation Dice Score of nnUnet obtained during brats competition **)**.
 
 
 
