@@ -44,7 +44,7 @@ Various variants of U net model are proposed by researchers.
 - [3] Proposed a variant of U net with following modifications:
   - Auxiliary segmentation outputs, which are used for deep supervision, branch off at two lowest resolutions in the decoder with softmax non linearity. 
   - Used Instance Normalisation.
-  - Used Leaky Rely for intermediate layer activation.
+  - Used Leaky Relu for intermediate layer activation.
 ## Model Development:
 ### Model Architecture Block Diagram:
 ![](20210412_163115.png)
@@ -104,6 +104,8 @@ direct ground truth of validation dataset is not available.**
   - **Final Dice Score of our model** = **(** Coarse Dice Score w.r.t nnUnet **)** **X** **(** Validation Dice Score of nnUnet obtained during brats competition **)**.
 - **Final Dice Score Results**:
 ![](IMG_20210413_165452.jpg)
+## 3D Rendered Results:
+### Edema:
 
 
 
