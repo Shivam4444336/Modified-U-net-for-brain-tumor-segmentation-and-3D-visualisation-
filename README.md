@@ -77,6 +77,16 @@ The model architecture follows U net configuration and resnet block as backbone 
 ![](IMG_20210408_113909.jpg)
 - **Accuracy Metric**: Dice Score Metric was used for training.It measures the overlap between two regions. If overlap between two regions is 100%, then score is 1 and it decreases as the overlap between two regions decreases.
 ![](1_EF3VCtk-VbTIKhriaQF0YQ.png)
+### Training Hardware:
+- **GPU** - Google Colab Nvidia P100 
+- **RAM** - 25 GB
+### Hyper-parameters for training:
+- **Learning Rate** = 10e-4
+- **Epochs** = 160
+- **Optimizer** = Adam(with default alpha/beta configurations)
+- **Batch Size** = 1
+- **Learning Rate Decay**: α = α0 × (1-e/Ne)^0.9 (adapted from [2])
+
 
 
 
