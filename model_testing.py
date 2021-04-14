@@ -25,6 +25,10 @@ predicted_mask_from_modified_unet = np.zeros((100,240,240,155,3))
 for i in range(100):
   h5data = h5py.File('/content/drive/MyDrive/BraTS2020_validation_data/volume_'+str(i), 'r')
   validation_data = np.array(h5data['data'])
+  #Flair matching
+  validation_data[:,:,:,0] = hist_match(validation_data[:,:,:,0],target[:,:,:,0])
+  #T1 weighted matching
+  validation_data[:,:,:,1] = hist_match(validation_data[:,:,:,1],target[:,:,:,1])
   validation_data = np.expand_dims(validation_data,0)
   predicted_mask_modified_unet = modified_u_net(validation_data)
   predicted_mask_modified_unet = predicted_mask_modified_unet.to_numpy()
