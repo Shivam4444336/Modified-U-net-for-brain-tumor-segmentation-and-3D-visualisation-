@@ -81,6 +81,12 @@ The model architecture follows U net configuration and resnet block as backbone 
 ![](IMG_20210412_175806.jpg)
 
 ## Model Training Details:
+### Input Size:
+**Passed the whole input 3D volume of size 240x240x155.** Cropping it into a specific patch size was avoided as it  would have
+broke the necessary morphological linkage between tumor patterns which in turn would have affected model's differentiation capacity of between tumor and non tumor region.
+However most people still crop it into specific size due to memory limitations. In our case gpu ram was upgraded to suit training requirements. 
+
+
 ### Metrics Used for training:
 - **Loss Metric**: Soft Dice loss was used for training. It measures the overlap between two regions. If overlap between two regions is 100%, then loss is 0 and it rises as the overlap between two regions decreases.
 ![](IMG_20210408_113909.jpg)
