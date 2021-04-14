@@ -83,7 +83,7 @@ The model architecture follows U net configuration and resnet block as backbone 
 ## Model Training Details:
 ### Input Size:
 **Passed the whole input 3D volume of size 240x240x155.** Cropping it into a specific patch size was avoided as it  would have
-broke the necessary morphological linkage between tumor patterns which in turn would have affected model's differentiation capacity of between tumor and non tumor region.
+broke the necessary morphological linkage between tumor patterns which in turn would have affected model's differentiation capacity between tumor and non tumor region.
 However most people still crop it into specific size due to memory limitations. In our case gpu ram was upgraded to suit training requirements. 
 
 
