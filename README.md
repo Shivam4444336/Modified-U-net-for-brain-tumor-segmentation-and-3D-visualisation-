@@ -105,7 +105,7 @@ However most people still crop it into specific size due to memory limitations. 
   - e is epoch counter and Ne is total number of epochs.
 ### Training Results: 
 **Loss Result:**
-![](IMG_20210413_100243.jpg)
+![](IMG_20210416_171654.jpg)
 **Accuracy Result:**
 ![](IMG_20210413_100156.jpg)
 ## Model Testing:
