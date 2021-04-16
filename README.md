@@ -107,7 +107,7 @@ However most people still crop it into specific size due to memory limitations. 
 **Loss Result:**
 ![](IMG_20210416_171654.jpg)
 **Accuracy Result:**
-![](IMG_20210413_100156.jpg)
+![](IMG_20210416_171159.jpg)
 ## Model Testing:
 **The proposed trained model was tested on brats 2020 
 validation dataset indirectly via top performing model of brats 2020 challenge [3] nnUnet because 
