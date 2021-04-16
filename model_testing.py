@@ -11,7 +11,7 @@ Original file is located at
 # dictionary mappings of tumor class : '0':Necrotic '1':Edema '2':Enhancing
 dictionary_of_validation_score_of_nnUnet_from_brats_competiton = {'1':0.9719,'0':0.8524,'2':0.7945}
 #Generating coarse binary mask from nnUnet using brats validation dataset
-coarse_validation_ground_truth_from_nnUnet = np.zeros((100,240,240,155,3))
+coarse_validation_ground_truth_from_nnUnet = np.zeros((125,240,240,155,3))
 for i in range(100):
   h5data = h5py.File('/content/drive/MyDrive/BraTS2020_validation_data/volume_'+str(i), 'r')
   validation_data = np.array(h5data['data'])
@@ -21,7 +21,7 @@ for i in range(100):
   predicted_mask_nnUnet = np.where(predicted_mask_nnUnet>0.5,1,0)
   coarse_validation_ground_truth_from_nnUnet[i] = predicted_mask_nnUnet
 #Generate predicted mask from modified u net model using brats validation dataset
-predicted_mask_from_modified_unet = np.zeros((100,240,240,155,3))
+predicted_mask_from_modified_unet = np.zeros((125,240,240,155,3))
 for i in range(100):
   h5data = h5py.File('/content/drive/MyDrive/BraTS2020_validation_data/volume_'+str(i), 'r')
   validation_data = np.array(h5data['data'])
