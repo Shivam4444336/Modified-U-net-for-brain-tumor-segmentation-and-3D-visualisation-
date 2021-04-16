@@ -97,7 +97,7 @@ However most people still crop it into specific size due to memory limitations. 
 - **RAM** - 25 GB
 ### Hyper-parameters for training:
 - **Learning Rate** = 10e-4
-- **Epochs** = 160
+- **Epochs** = 400
 - **Optimizer** = Adam(with default alpha/beta configurations)
 - **Batch Size** = 1
 - **Learning Rate Decay**: 
